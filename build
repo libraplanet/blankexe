@@ -1,0 +1,9 @@
+#!/bin/sh
+
+
+if [ ! -d bin ];
+then
+  mkdir -p bin
+fi
+gcc -o bin/blankexe.exe -mwindows -s -nostdlib ./projects/blankexe/blankexe/main.c
+
